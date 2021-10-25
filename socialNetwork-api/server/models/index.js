@@ -2,6 +2,7 @@ const Sequelize = require('sequelize');
 
 const DB_URL = require('../../db/config');
 const Example = require('./example');
+const User = require('./usuario');
 
 // import models
 
@@ -14,7 +15,8 @@ const sequelize = new Sequelize(DB_URL.url, {
 const db = {
     // example
     // User: User(sequelize)
-    Example: Example(sequelize)
+    Example: Example(sequelize),
+    User: User(sequelize)
 
 }
 
