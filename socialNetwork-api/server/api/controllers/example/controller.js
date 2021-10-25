@@ -10,6 +10,7 @@ class ExampleController {
             ]
         })
     }
+
 }
 
 module.exports = new ExampleController();
